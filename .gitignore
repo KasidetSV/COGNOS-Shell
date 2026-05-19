@@ -1,0 +1,48 @@
+# Local System Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Environment Variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# API Keys & Secrets
+private_keys.pem
+*.key
+credentials.json
+auth.json
+
+# Dependencies
+node_modules/
+.venv/
+venv/
+env/
+__pycache__/
+*.pyc
+
+# IDEs and Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Build & Logs
+build/
+dist/
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Proprietary Private Brain Exclusions
+# (Ensures internal memory structures are NEVER pushed to the public shell)
+/00.COGNOS CORE/
+/01.IDEA/
+/02.PROJECT-ROADMAP/
+/SKILL/
+*.bak

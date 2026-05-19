@@ -1,0 +1,58 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "COGNOS Metacognitive Orchestration Schema",
+  "description": "Architectural structure mapping the logic gates, persistent learning layers, and execution guardrails of the COGNOS system.",
+  "type": "object",
+  "properties": {
+    "Architecture": {
+      "type": "object",
+      "properties": {
+        "Level_0_Anchors": {
+          "description": "Immutable laws governing system execution.",
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "Zero-Silence Clause",
+              "Execute-Before-Claim",
+              "BLAST Structural Governance",
+              "Human-in-the-Loop Trigger"
+            ]
+          }
+        },
+        "Level_1_Hermes_Persistence": {
+          "description": "Automated pipeline distilling ephemeral session logs into hard-coded workflow enhancements.",
+          "type": "object",
+          "properties": {
+            "StorageType": { "type": "string", "default": "Markdown Knowledge Graph" },
+            "DistillationInterval": { "type": "string", "default": "On-Execution-Success" }
+          }
+        },
+        "Level_2_Skill_Index": {
+          "description": "Modular scripts and agentic capabilities.",
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    },
+    "Execution_Engine": {
+      "type": "object",
+      "properties": {
+        "Pipeline": {
+          "type": "string",
+          "default": "BLAST (Blueprint, Links, Architect, Stylize, Trigger)"
+        },
+        "DiagnosticProtocol": {
+          "type": "string",
+          "default": "JoT-Auditor (Justification-of-Trace)"
+        },
+        "SafetyHalt": {
+          "description": "If complexity exceeds threshold, force human approval.",
+          "type": "boolean",
+          "default": true
+        }
+      }
+    }
+  },
+  "required": ["Architecture", "Execution_Engine"]
+}
