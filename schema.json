@@ -16,7 +16,8 @@
               "Zero-Silence Clause",
               "Execute-Before-Claim",
               "BLAST Structural Governance",
-              "Human-in-the-Loop Trigger"
+              "Human-in-the-Loop Trigger",
+              "Platform-Harness-Transparency"
             ]
           }
         },
@@ -48,6 +49,11 @@
         },
         "SafetyHalt": {
           "description": "If complexity exceeds threshold, force human approval.",
+          "type": "boolean",
+          "default": true
+        },
+        "HarnessBypassLogging": {
+          "description": "Log platform blocks transparently without silent execution.",
           "type": "boolean",
           "default": true
         }
